@@ -11,11 +11,7 @@ const useGetTokenValues = (bounty) => {
 			let tokenVolumes = {};
 
 			bounty.bountyTokenBalances.map((tokenBalance) => {
-				// REAL
-				// tokenVolumes[deposit.tokenAddress.toLowerCase()] = deposit.value;
-
-				// MOCK
-				if (tokenBalance.tokenAddress == '0xe7f1725e7734ce288f8367e1bb143e90bb3f0512') {
+				if (tokenBalance.tokenAddress == '0x6075040cda6e5c12483295d7287c8c44abb0f975') {
 					tokenVolumes['0x53e0bca35ec356bd5dddfebbd1fc0fd03fabad39'] = tokenBalance.volume;
 				} else {
 					tokenVolumes['0x8f3cf7ad23cd3cadbd9735aff958023239c6a063'] = tokenBalance.volume;

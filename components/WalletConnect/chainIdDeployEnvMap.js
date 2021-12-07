@@ -17,17 +17,18 @@ const chainIdDeployEnvMap = {
 		}]
 	},
 	'docker': {
-		chainId: 31337,
-		networkName: 'Localhost:8545',
+		chainId: 80001,
+		networkName: 'Mumbai',
 		params: [{
-			chainId: '0x7A69',
-			chainName: 'Localhost 8545',
+			chainId: '0x13881',
+			chainName: 'Mumbai Testnet',
 			nativeCurrency: {
-				name: 'ETH',
-				symbol: 'ETH',
+				name: 'MATIC',
+				symbol: 'MATIC',
 				decimals: 18
 			},
-			rpcUrls: ['https://localhost:8545'],
+			rpcUrls: ['https://rpc-mumbai.maticvigil.com/v1/258e87c299409a354a268f96a06f9e6ae7ab8cea'],
+			blockExplorerUrls: ['https://mumbai.polygonscan.com/']
 		}]
 	},
 	'development': {
